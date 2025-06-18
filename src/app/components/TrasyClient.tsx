@@ -161,7 +161,7 @@ const TrasyClient = () => {
                         <p className={styles.routePlaceholderText}>Zdjęcie trasy</p>
                       </div>
                     </motion.div> */}
-                                        <Link href={'/#kontact'}>
+                                        <Link href={'/#kontakt'}>
                                             <motion.button
                                                 className={styles.routeButton}
                                                 whileHover={{ scale: 1.05, y: -2 }}
@@ -318,7 +318,7 @@ const TrasyClient = () => {
                         <p className={styles.routePlaceholderText}>{route.placeholder}</p>
                       </div>
                     </motion.div> */}
-                                        <Link href={'/#kontact'} className={styles.routeLink}>
+                                        <Link href={'/#kontakt'} className={styles.routeLink}>
                                             <motion.button
                                                 className={styles.routeButton}
                                                 whileHover={{ scale: 1.05, y: -2 }}
