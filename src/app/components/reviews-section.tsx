@@ -122,31 +122,32 @@ const ReviewsSection = () => {
                 >
                     {reviews.map((review) => (
                         <motion.div key={review.id} variants={scaleIn}>
-                            <Card className={`${styles.serviceCard} h-full`} style={{ borderLeft: "4px solid #1e40af" }}>
-                                <CardContent className={styles.serviceCardContent}>
-                                    <div className="space-y-4">
-                                        {/* Header with avatar and info */}
-                                        <div className="flex items-start gap-3">
-                                            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
-                                                {review.avatar}
-                                            </div>
-                                            <div className="flex-1 min-w-0">
-                                                <h4 className="font-semibold text-gray-900 truncate">{review.name}</h4>
-                                                <div className="flex items-center gap-2 mt-1">
-                                                    <StarRating rating={review.rating} />
-                                                    {/* <span className="text-sm text-gray-500">{review.date}</span> */}
-                                                </div>
+                            <CardContent className={`${styles.serviceCardContent} p-4 sm:p-6 h-95 shadow-lg hover:shadow-xl transition-shadow duration-300`}> {/* Reduce padding on small screens */}
+                                <div className="space-y-3 sm:space-y-4"> {/* Reduce spacing on small screens */}
+                                    {/* Header with avatar and info */}
+                                    <div className="flex items-start gap-2 sm:gap-3"> {/* Reduce gap on small screens */}
+                                        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold text-xs sm:text-sm flex-shrink-0">
+                                            {review.avatar}
+                                        </div>
+                                        <div className="flex-1 min-w-0">
+                                            <h4 className="font-semibold text-gray-900 truncate text-sm sm:text-base">
+                                                {review.name}
+                                            </h4>
+                                            <div className="flex items-center gap-2 mt-1">
+                                                <StarRating rating={review.rating} />
                                             </div>
                                         </div>
-
-                                        {/* Quote icon */}
-                                        <Quote className="w-6 h-6 text-blue-500 opacity-50" />
-
-                                        {/* Review text */}
-                                        <p className="text-gray-700 leading-relaxed text-sm">{review.text}</p>
                                     </div>
-                                </CardContent>
-                            </Card>
+
+                                    {/* Quote icon */}
+                                    <Quote className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500 opacity-50" />
+
+                                    {/* Review text */}
+                                    <p className="text-gray-700 leading-relaxed text-xs sm:text-sm">
+                                        {review.text}
+                                    </p>
+                                </div>
+                            </CardContent>
                         </motion.div>
                     ))}
                 </motion.div>

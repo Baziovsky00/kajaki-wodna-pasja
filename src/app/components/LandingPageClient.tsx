@@ -47,9 +47,9 @@ const scaleIn = {
 const LandingPageClient = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const heroImages = [
-    { src: "/images/kajaki7.jpg", alt: "Spływy kajakowe wisła oraz wieprz" },
-    { src: "/images/kajaki1.jpg", alt: "Kajaki na rzece Wieprz" },
-    { src: "/images/kajaki2.jpg", alt: "Grupa kajakarzy na Wiśle" },
+    { src: "/images/kajaki3.jpg", alt: "Spływy kajakowe wisła oraz wieprz" },
+    { src: "/images/kajaki2.jpg", alt: "Kajaki na rzece Wieprz" },
+    { src: "/images/kajaki1.jpg", alt: "Grupa kajakarzy na Wiśle" },
   ]
 
   useEffect(() => {
@@ -269,7 +269,7 @@ const LandingPageClient = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[4, 5, 6, 7, 8, 9].map((i) => (
               <motion.div
                 key={i}
                 className={styles.galleryItem}
