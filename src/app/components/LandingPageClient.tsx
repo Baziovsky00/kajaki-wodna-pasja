@@ -8,7 +8,7 @@ import { useState, useEffect } from "react"
 import Navigation from "./Navigation"
 import Footer from "./Footer"
 import ReviewsSection from "./reviews-section"
-import styles from "@/app/page.module.css"
+import styles from "@/app/page.module.css";
 import Image from "next/image"
 
 // Animation variants
