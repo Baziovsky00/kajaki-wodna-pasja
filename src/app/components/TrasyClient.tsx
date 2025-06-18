@@ -1,7 +1,7 @@
 "use client"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, Clock, MapPin, Star, Trees, Castle } from "lucide-react"
+import { ArrowLeft, Clock, MapPin, Star, Trees, Castle } from "lucide-react";
 import Link from "next/link"
 import { motion } from "framer-motion"
 import Navigation from "./Navigation"
