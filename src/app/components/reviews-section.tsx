@@ -109,7 +109,7 @@ const ReviewsSection = () => {
                             <span className="text-lg font-semibold text-gray-700 ml-2">5.0</span>
                         </div>
                         <span className="text-gray-500">•</span>
-                        <span className="text-gray-600">Oparte na 127 opiniach Google</span>
+                        <span className="text-gray-600">Oparte na 45 opiniach Google</span>
                     </div>
                 </motion.div>
 
