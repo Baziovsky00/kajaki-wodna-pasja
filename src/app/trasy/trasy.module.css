@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 25%, #ffffff 50%, #fef3c7 75%, #fef7cd 100%);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -70,7 +70,7 @@
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #ffffff 100%);
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #fef3c7 100%);
   padding: 3rem 0;
   position: relative;
   overflow: hidden;
@@ -83,7 +83,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23dbeafe" stop-opacity="0.2"/><stop offset="100%" stop-color="%23dbeafe" stop-opacity="0"/></radialGradient></defs><circle cx="300" cy="300" r="200" fill="url(%23a)"/><circle cx="700" cy="700" r="300" fill="url(%23a)"/></svg>');
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23dbeafe" stop-opacity="0.2"/><stop offset="100%" stop-color="%23dbeafe" stop-opacity="0"/></radialGradient><radialGradient id="b" cx="50%" cy="50%"><stop offset="0%" stop-color="%23fbbf24" stop-opacity="0.15"/><stop offset="100%" stop-color="%23fbbf24" stop-opacity="0"/></radialGradient></defs><circle cx="300" cy="300" r="200" fill="url(%23a)"/><circle cx="700" cy="700" r="300" fill="url(%23b)"/></svg>');
   pointer-events: none;
 }
 
@@ -125,7 +125,10 @@
 .headerTitle {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 800;
-  color: #111827;
+  background: linear-gradient(135deg, #1e40af 0%, #059196 50%, #177afc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 1.5rem;
   letter-spacing: -0.025em;
 }
@@ -153,7 +156,10 @@
 .sectionTitle {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #111827;
+  background: linear-gradient(135deg, #1e40af 0%, #059196 50%, #177afc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
   letter-spacing: -0.025em;
 }
@@ -169,7 +175,7 @@
 /* Wieprz Section */
 .wieprzSection {
   padding: 5rem 0;
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
 }
 
 .riverImageContainer {
@@ -190,22 +196,15 @@
 .placeholderContent {
   text-align: center;
   color: #1e40af;
+  width: 100%;
+  height: 100%;
 }
 
-.placeholderIcon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.placeholderTitle {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.placeholderSubtitle {
-  font-size: 0.95rem;
-  opacity: 0.8;
+.placeholderContent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .routesGrid {
@@ -229,6 +228,7 @@
   border: 1px solid rgba(59, 130, 246, 0.1);
   overflow: hidden;
   display: flex;
+  flex-direction: column;
 }
 
 .routeCard:hover {
@@ -260,38 +260,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .routeDescription {
   color: #6b7280;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.5;
 }
 
-.routeImagePlaceholder {
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+.routePrice {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  height: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  border: 1px solid rgba(59, 130, 246, 0.1);
-}
-
-.routePlaceholderContent {
   text-align: center;
-  color: #1e40af;
-}
-
-.routePlaceholderIcon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.routePlaceholderText {
-  font-size: 0.875rem;
-  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .routeButton {
@@ -323,7 +308,10 @@
 .attractionsTitle {
   font-size: 2rem;
   font-weight: 700;
-  color: #111827;
+  background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -359,19 +347,6 @@
   width: 3rem;
   height: 3rem;
   margin: 0 auto 1rem;
-  color: #059669;
-}
-
-.attractionIcon:nth-child(1) {
-  color: #059669;
-}
-
-.attractionIcon:nth-child(2) {
-  color: #d97706;
-}
-
-.attractionIcon:nth-child(3) {
-  color: #1e40af;
 }
 
 .attractionTitle {
@@ -390,7 +365,7 @@
 /* Wisła Section */
 .wislaSection {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: linear-gradient(135deg, #a4d1e6 0%, #c7ffe3 50%, #619fe6 100%);
 }
 
 .wislaRoutesGrid {
@@ -419,7 +394,10 @@
 .benefitsTitle {
   font-size: 2rem;
   font-weight: 700;
-  color: #111827;
+  background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -457,6 +435,78 @@
   color: #6b7280;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+/* Contact Section */
+.contactSection {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+}
+
+.contactTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.contactIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #1e40af;
+  flex-shrink: 0;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.phoneLink {
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.phoneLink:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.emailLink {
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.emailLink:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }
 
 /* CTA Section */
@@ -570,10 +620,4 @@
 .footerCopyright {
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
-}
-
-.riverImagePlaceholder img{
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 4px;
 }
