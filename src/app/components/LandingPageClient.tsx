@@ -84,24 +84,24 @@ const LandingPageClient = () => {
               Spływy kajakowe i wypożyczalnia sprzętu – Parchatka (okolice Kazimierza Dolnego i Puław)
             </motion.p>
             <motion.div className={styles.heroButtons} variants={fadeInUp}>
-              <Link href={"/#kontakt"}>
+              <Link href={"/trasy-wieprz"}>
                 <motion.button
                   className={styles.primaryButton}
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  🔹 Zarezerwuj spływ
+                  Sprawdź trasy na Wieprzu
                 </motion.button>
               </Link>
-              <Link href="/trasy">
+              <Link href="/trasy-wisla">
                 <motion.button
                   className={styles.secondaryButton}
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  🔹 Sprawdź trasy na Wieprzu i Wiśle
+                  Sprawdź trasy na Wiśle
                 </motion.button>
               </Link>
             </motion.div>
