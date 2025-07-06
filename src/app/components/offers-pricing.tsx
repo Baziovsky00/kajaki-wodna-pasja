@@ -18,17 +18,19 @@ export default function OffersPricing() {
 
             {/* Main Offers */}
             <section className="py-16 px-4">
-                <div className="container mx-auto max-w-6xl">
+                <div className="container mx-auto max-w-8xl">
                     <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Organizujemy</h2>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                         <Card className="hover:shadow-lg transition-shadow">
-                            <div className="aspect-video bg-gray-200 rounded-t-lg">
+                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
                                 <Image
-                                    src={'/images/kajaki1.jpg'} 
-                                    width={500}
-                                    height={150}
-                                    alt="Wodna Pasja - Spływy jednodniowe i kilkudniowe"/>
+                                    src={'/images/kajaki1.jpg'}
+                                    alt="Wodna Pasja - Spływy jednodniowe i kilkudniowe"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 500px"
+                                    className="object-cover rounded-t-lg"
+                                />
                             </div>
                             <CardHeader className="text-center">
                                 <Clock className="w-8 h-8 mx-auto mb-2 text-blue-600" />
@@ -37,12 +39,14 @@ export default function OffersPricing() {
                         </Card>
 
                         <Card className="hover:shadow-lg transition-shadow">
-                            <div className="aspect-video bg-gray-200 rounded-t-lg">
+                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
                                 <Image
-                                    src={'/images/kajaki2.jpg'} 
-                                    width={500}
-                                    height={150}
-                                    alt="Wodna Pasja - panieńskie, kawalerskie, jubileuszowe"/>
+                                    src={'/images/kajaki2.jpg'}
+                                    alt="Wodna Pasja - panieńskie, kawalerskie, jubileuszowe"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 500px"
+                                    className="object-cover rounded-t-lg"
+                                />
                             </div>
                             <CardHeader className="text-center">
                                 <Star className="w-8 h-8 mx-auto mb-2 text-purple-600" />
@@ -52,12 +56,14 @@ export default function OffersPricing() {
                         </Card>
 
                         <Card className="hover:shadow-lg transition-shadow">
-                            <div className="aspect-video bg-gray-200 rounded-t-lg">
+                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
                                 <Image
-                                    src={'/images/kajaki3.jpg'} 
-                                    width={500}
-                                    height={150}
-                                    alt="Wodna Pasja - Spływy indywidualne i rodzinne"/>
+                                    src={'/images/kajaki3.jpg'}
+                                    alt="Wodna Pasja - Spływy indywidualne i rodzinne"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 500px"
+                                    className="object-cover rounded-t-lg"
+                                />
                             </div>
                             <CardHeader className="text-center">
                                 <Users className="w-8 h-8 mx-auto mb-2 text-green-600" />
@@ -66,12 +72,14 @@ export default function OffersPricing() {
                         </Card>
 
                         <Card className="hover:shadow-lg transition-shadow">
-                            <div className="aspect-video bg-gray-200 rounded-t-lg">
+                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
                                 <Image
-                                    src={'/images/kajaki10.jpg'} 
-                                    width={500}
-                                    height={150}
-                                    alt="Wodna Pasja - Spływy grupowe i integracyjne"/>
+                                    src={'/images/kajaki10.jpg'}
+                                    alt="Wodna Pasja - Spływy grupowe i integracyjne"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 500px"
+                                    className="object-cover rounded-t-lg"
+                                />
                             </div>
                             <CardHeader className="text-center">
                                 <Users className="w-8 h-8 mx-auto mb-2 text-orange-600" />
