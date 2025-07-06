@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import TrasyClient from "../components/TrasyClient";
+import TrasyWisla from "../components/TrasyWisla";
 
 export const metadata: Metadata = {
   title: 'Trasy kajakowe Wieprz & Wisła – Wodna Pasja',
@@ -38,6 +39,6 @@ export const metadata: Metadata = {
 
 export default function TrasyPage() {
   return (
-    <TrasyClient />
+    <TrasyWisla />
   )
 }

@@ -10,6 +10,8 @@ import Footer from "./Footer"
 import ReviewsSection from "./reviews-section"
 import styles from "@/app/page.module.css";
 import Image from "next/image"
+import OffersPricing from "./offers-pricing"
+import CallIcon from "./CallIcon"
 
 // Animation variants
 const fadeInUp = {
@@ -156,95 +158,19 @@ const LandingPageClient = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <p className={styles.introText}>
-              Z nami poznasz uroki Wieprza – rzeki o nieskażonej przyrodzie, skarpach i dolinach (np. Łęczna,
-              Zawieprzyce, Lubartów), a także majestatycznej Wisły z widokiem na Janowiec, Kazimierz Dolny i Puławy.
+              <b>Wodna Pasja</b> – <b>Kajaki</b> to rodzinna wypożyczalnia sprzętu kajakowego działająca na dwóch najpiękniejszych rzekach Lubelszczyzny – <b>Wiśle</b> oraz <b>Wieprzu (pradolina)</b>.
+              Nasza przygoda z kajakami zaczęła się z miłości do natury i potrzeby spokoju, jaki daje czas spędzony na wodzie. Z czasem ta pasja przerodziła się w coś więcej – <b>w Wodną Pasję</b>, którą chcemy dzielić z Wami.
+              Naszym celem jest nie tylko zapewnienie profesjonalnego sprzętu i bezpieczeństwa, ale przede wszystkim <b>tworzenie wyjątkowych wspomnień w otoczeniu dzikiej przyrody Lubelszczyzny</b>.
+              Wierzymy, że każdy powinien choć raz spojrzeć na świat z perspektywy kajaka – powoli płynąc po rzece, zanurzyć się w ciszy, odkrywać nowe miejsca i na chwilę zostawić codzienność za sobą.
+              Dołącz do nas i poczuj, jak smakuje prawdziwa wodna przygoda!
+
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Services */}
-      <section className={styles.services}>
-        <div className={styles.sectionContainer}>
-          <motion.div
-            className={styles.sectionHeader}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <h2 className={styles.sectionTitle}>Nasza Oferta</h2>
-          </motion.div>
-
-          <motion.div
-            className={styles.servicesGrid}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
-            <motion.div variants={scaleIn}>
-              <Card className={`${styles.serviceCard} ${styles.serviceCardGreen}`}>
-                <CardContent className={styles.serviceCardContent}>
-                  <div className={styles.serviceCardInner}>
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                    >
-                      <Users className={styles.serviceIcon} />
-                    </motion.div>
-                    <h3 className={styles.serviceTitle}>Spływy Grupowe</h3>
-                    <p className={styles.serviceDescription}>
-                      Spływy jednodniowe i kilkudniowe – minimum 8 osób, opcja mobilna. Trasy tematyczne: rodzinne,
-                      szkolne, firmowe, integracyjne.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div variants={scaleIn}>
-              <Card className={`${styles.serviceCard} ${styles.serviceCardBlue}`}>
-                <CardContent className={styles.serviceCardContent}>
-                  <div className={styles.serviceCardInner}>
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: -5 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                    >
-                      <Shield className={styles.serviceIcon} />
-                    </motion.div>
-                    <h3 className={styles.serviceTitle}>Profesjonalny Sprzęt</h3>
-                    <p className={styles.serviceDescription}>
-                      Kajaki jedno- i dwuosobowe, kapoki, wiosła, worki wodoszczelne. Wszystko w najwyższej jakości dla
-                      Twojego bezpieczeństwa.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div variants={scaleIn}>
-              <Card className={`${styles.serviceCard} ${styles.serviceCardOrange}`}>
-                <CardContent className={styles.serviceCardContent}>
-                  <div className={styles.serviceCardInner}>
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                    >
-                      <Clock className={styles.serviceIcon} />
-                    </motion.div>
-                    <h3 className={styles.serviceTitle}>Usługi Dodatkowe</h3>
-                    <p className={styles.serviceDescription}>
-                      Transport sprzętu i uczestników, wypożyczenie przewodnika/WOPR, catering, ognisko, miejsca
-                      noclegowe przy trasie.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
+      <OffersPricing />
 
       {/* Reviews Section */}
       <ReviewsSection />
@@ -322,7 +248,7 @@ const LandingPageClient = () => {
                   whileHover={{ x: 5 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  <Phone className={styles.contactIcon} style={{color: 'green'}}/>
+                  <Phone className={styles.contactIcon} style={{ color: 'green' }} />
                   <div className={styles.contactInfoText}>
                     <a href="tel:+48668481266" className={styles.phoneLink}>
                       <p className={styles.contactInfoDetail}>+48 668 481 266</p>
@@ -356,6 +282,7 @@ const LandingPageClient = () => {
       </section>
 
       <Footer />
+      <CallIcon />
     </div>
   )
 }

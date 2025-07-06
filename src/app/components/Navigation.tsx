@@ -33,18 +33,13 @@ const Navigation = () => {
 
     const links = [
         {
-            name: "Strona Głowna",
-            link: '/',
+            name: 'Trasy Wisla',
+            link: 'trasy-wisla',
             type: 'link'
         },
         {
-            name: 'Trasy',
-            link: 'trasy',
-            type: 'link'
-        },
-        {
-            name: 'Kontakt',
-            link: '#kontakt',
+            name: 'Trasy Wieprz',
+            link: 'trasy-wieprz',
             type: 'link'
         },
         // {
@@ -132,7 +127,7 @@ const Navigation = () => {
                                             height={60}
                                             alt='Wodna Pasja - spływy kajakowe'
                                         />
-                                        <p>Globora</p>
+                                        <p>Wodna Pasja</p>
                                     </div>
                                     <button
                                         className={styles.closeButton}

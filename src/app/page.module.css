@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 25%, #03fff2 50%, #c7eefe 75%, #cde6fe 100%);
+  /* background: linear-gradient(135deg, #fff5f0 0%, #feebe0 25%, #ff5f03 50%, #fed4c7 75%, #fedccd 100%); */
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -68,8 +68,10 @@
 }
 
 /* Hero Section */
+
 .hero {
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 25%, #ffffff 50%, #cde8fe 75%, #cfe0f0 100%);
+  background: linear-gradient(135deg, #fdead8 0%, #fff7ed 100%);
+  /* softer orange background */
   padding: 5rem 0;
   position: relative;
   overflow: hidden;
@@ -82,7 +84,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23dbeafe" stop-opacity="0.3"/><stop offset="100%" stop-color="%23dbeafe" stop-opacity="0"/></radialGradient><radialGradient id="b" cx="50%" cy="50%"><stop offset="0%" stop-color="%23fbbf24" stop-opacity="0.2"/><stop offset="100%" stop-color="%23fbbf24" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="300" fill="url(%23a)"/><circle cx="800" cy="800" r="400" fill="url(%23b)"/></svg>');
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23fbbf24" stop-opacity="0.3"/><stop offset="100%" stop-color="%23fbbf24" stop-opacity="0"/></radialGradient><radialGradient id="b" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ef4444" stop-opacity="0.2"/><stop offset="100%" stop-color="%23ef4444" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="300" fill="url(%23a)"/><circle cx="800" cy="800" r="400" fill="url(%23b)"/></svg>');
   pointer-events: none;
 }
 
@@ -102,7 +104,7 @@
 .heroTitle {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
-  background: linear-gradient(135deg, #1e40af 0%, #059196 50%, #177afc 100%);
+  background: linear-gradient(135deg, #f59e42 0%, #ef4444 50%, #c57122 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -137,7 +139,7 @@
 }
 
 .primaryButton {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #e98011 0%, #ef6c44 100%);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -146,17 +148,17 @@
   border-radius: 0.75rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 15px rgba(245, 158, 66, 0.3);
   min-width: 200px;
 }
 
 .primaryButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
 }
 
 .secondaryButton {
-  background: linear-gradient(135deg, #11c1d8 0%, #2ebcfd 100%);
+  background: linear-gradient(135deg, #353635 0%, #3b3b39 100%);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -166,12 +168,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   min-width: 200px;
-  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
+  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
 }
 
 .secondaryButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.4);
+  box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
 }
 
 .heroImageContainer {
@@ -326,7 +328,7 @@
 .sectionTitle {
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
+  background: linear-gradient(135deg, #ff6d33 0%, #ff7519 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -419,7 +421,7 @@
 /* Gallery */
 .gallery {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 25%, #ffffff 50%, #cde8fe 75%, #cfe0f0 100%);
+  background: linear-gradient(135deg, #fff5f0 0%, #ffffff 25%, #ffffff 50%, #fee1cd09 75%, #f0d8cf 100%);
 }
 
 .galleryGrid {

@@ -1,0 +1,333 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+}
+
+.header {
+  background: linear-gradient(135deg, #ff6b35 0%, #d32f2f 100%);
+  color: white;
+  padding: 2rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/placeholder.svg?height=600&width=1200") center / cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.headerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.breadcrumbLink {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.breadcrumbLink:hover {
+  color: white;
+}
+
+.breadcrumbIcon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.headerContent {
+  text-align: center;
+}
+
+.headerTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.headerSubtitle {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.descriptionSection {
+  padding: 4rem 0;
+  background: white;
+}
+
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.descriptionContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.descriptionText {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.routesSection {
+  padding: 4rem 0;
+  background: #fafafa;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #d32f2f;
+}
+
+.routeLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.routeImageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.routeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.routeImage:hover {
+  transform: scale(1.05);
+}
+
+.routeInfo {
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.routeTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.routeDetails {
+  margin-bottom: 1.5rem;
+}
+
+.routeDetails p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.routeDescription {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.routeDescription h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.routeDescription ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.routeDescription li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.routeDescription li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.routeNote {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.routeButton {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.routeButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.attractionsSection {
+  padding: 4rem 0;
+  background: white;
+}
+
+.attractionsTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ff6b35;
+}
+
+.attractionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.attractionItem {
+  background: linear-gradient(135deg, #ff6b35, #d32f2f);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.attractionTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.attractionDescription {
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.contactSection {
+  padding: 4rem 0;
+  background: #f5f5f5;
+}
+
+.contactTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #d32f2f;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sectionHeader p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ff6b35;
+}
+
+.phoneLink,
+.emailLink {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.phoneLink:hover,
+.emailLink:hover {
+  color: #ff6b35;
+}
+
+@media (max-width: 768px) {
+  .headerTitle {
+    font-size: 2.5rem;
+  }
+
+  .routeLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .routeInfo {
+    order: 2;
+  }
+
+  .routeImageContainer {
+    order: 1;
+    height: 250px;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
