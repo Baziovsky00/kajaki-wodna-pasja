@@ -6,7 +6,7 @@ export default function OffersPricing() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
             {/* Hero Section */}
-            <section className="py-16 px-4 text-center bg-gradient-to-r from-orange-500 to-red-400 text-white">
+            <section className="py-16 px-4 text-center bg-gradient-to-r text-white" style={{background: 'linear-gradient(135deg, #25c1ff 0%, #247dd1 100%'}}>
                 <div className="container mx-auto max-w-4xl">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Oferta i Cennik</h1>
                     <p className="text-xl md:text-2xl mb-8 opacity-90">

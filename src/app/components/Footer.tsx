@@ -83,6 +83,13 @@ export default function Footer() {
                   </motion.span>
                 </Link>
               </li>
+              <li>
+                <Link href="regulamin.pdf" target="blank" className={styles.footerLink}>
+                  <motion.span whileHover={{ x: 5 }} transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+                    Regulamin
+                  </motion.span>
+                </Link>
+              </li>
             </ul>
           </motion.div>
 

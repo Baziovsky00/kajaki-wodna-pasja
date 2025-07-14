@@ -70,7 +70,7 @@
 /* Hero Section */
 
 .hero {
-  background: linear-gradient(135deg, #fdead8 0%, #fff7ed 100%);
+  background: linear-gradient(135deg, #ecf7fc 0%, #edfbff 50%, rgb(255, 220, 220) 100%);
   /* softer orange background */
   padding: 5rem 0;
   position: relative;
@@ -84,7 +84,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23fbbf24" stop-opacity="0.3"/><stop offset="100%" stop-color="%23fbbf24" stop-opacity="0"/></radialGradient><radialGradient id="b" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ef4444" stop-opacity="0.2"/><stop offset="100%" stop-color="%23ef4444" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="300" fill="url(%23a)"/><circle cx="800" cy="800" r="400" fill="url(%23b)"/></svg>');
+  /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23fbbf24" stop-opacity="0.3"/><stop offset="100%" stop-color="%23fbbf24" stop-opacity="0"/></radialGradient><radialGradient id="b" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ef4444" stop-opacity="0.2"/><stop offset="100%" stop-color="%23ef4444" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="300" fill="url(%23a)"/><circle cx="800" cy="800" r="400" fill="url(%23b)"/></svg>'); */
   pointer-events: none;
 }
 
@@ -104,12 +104,12 @@
 .heroTitle {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
-  background: linear-gradient(135deg, #f59e42 0%, #ef4444 50%, #c57122 100%);
+  background: linear-gradient(135deg, #ee9f4a 0%, #ff592f 50%, #da8a40 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.3;
   letter-spacing: -0.025em;
 }
 
@@ -136,6 +136,7 @@
     flex-direction: row;
     justify-content: center;
   }
+  
 }
 
 .primaryButton {
@@ -302,7 +303,20 @@
 }
 
 .introContent {
+  padding-block: 100px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.introContent img {
+  max-width: 500px;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
 }
 
 .introText {
@@ -312,6 +326,22 @@
   margin: 0 auto;
   line-height: 1.7;
   font-weight: 400;
+}
+
+@media (max-width: 1108px) {
+  .introContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .introContent img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .introText {
+    font-size: 1.05em;
+  }
 }
 
 /* Services */

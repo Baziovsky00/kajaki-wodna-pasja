@@ -93,7 +93,7 @@ const ReviewsSection = () => {
   return (
     <section
       className={styles.services}
-      style={{ background: "linear-gradient(135deg,rgb(245, 230, 230) 0%,rgb(255, 244, 240) 50%,rgb(254, 224, 224) 100%)" }}
+      style={{ background: "linear-gradient(135deg,rgb(230, 232, 245) 0%,rgb(240, 249, 255) 50%,rgb(254, 224, 224) 100%)" }}
     >
       <div className={styles.sectionContainer}>
         <motion.div

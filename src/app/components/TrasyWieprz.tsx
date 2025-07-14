@@ -111,7 +111,7 @@ const TrasyWieprz = () => {
           >
             <div className={styles.routeImageContainer}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/trasy-wieprz/wieprz1.jpeg"
                 width={600}
                 height={400}
                 alt="Trasa Baranów - Bialki Dolne"
@@ -162,7 +162,7 @@ const TrasyWieprz = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className={styles.routeInfo} style={{ backgroundColor: "#d32f2f" }}>
+            <div className={styles.routeInfo} style={{ backgroundColor: "rgb(77, 118, 179)" }}>
               <h3 className={styles.routeTitle}>Trasa 2: Baranów – Kośmin</h3>
               <div className={styles.routeDetails}>
                 <p>
@@ -201,7 +201,7 @@ const TrasyWieprz = () => {
             </div>
             <div className={styles.routeImageContainer}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/trasy-wieprz/wieprz2.jpeg"
                 width={600}
                 height={400}
                 alt="Trasa Baranów - Kośmin"
@@ -220,14 +220,14 @@ const TrasyWieprz = () => {
           >
             <div className={styles.routeImageContainer}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/trasy-wieprz/wieprz5.jpeg"
                 width={600}
                 height={400}
                 alt="Trasa Bialki Dolne - Kośmin"
                 className={styles.routeImage}
               />
             </div>
-            <div className={styles.routeInfo} style={{ backgroundColor: "#ff8f65" }}>
+            <div className={styles.routeInfo} style={{ backgroundColor: "rgb(248, 126, 56)" }}>
               <h3 className={styles.routeTitle}>Trasa 3: Bialki Dolne – Kośmin</h3>
               <div className={styles.routeDetails}>
                 <p>

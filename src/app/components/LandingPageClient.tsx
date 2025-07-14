@@ -107,43 +107,27 @@ const LandingPageClient = () => {
             </motion.div>
           </motion.div>
 
-          <motion.div
+            <motion.div
             className={styles.heroImageContainer}
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          >
-            <div className={styles.carouselContainer}>
-              <div className={styles.carousel}>
-                {heroImages.map((image, index) => (
-                  <div key={index} className={`${styles.carouselSlide} ${index === currentSlide ? styles.active : ""}`}>
-                    <Image
-                      src={image.src || "/placeholder.svg"}
-                      width={1200}
-                      height={400}
-                      alt={image.alt}
-                      className={styles.carouselImage}
-                    />
-                  </div>
-                ))}
-              </div>
-              <button className={`${styles.carouselButton} ${styles.carouselButtonPrev}`} onClick={prevSlide}>
-                <ChevronLeft size={24} />
-              </button>
-              <button className={`${styles.carouselButton} ${styles.carouselButtonNext}`} onClick={nextSlide}>
-                <ChevronRight size={24} />
-              </button>
-              <div className={styles.carouselDots}>
-                {heroImages.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`${styles.carouselDot} ${index === currentSlide ? styles.active : ""}`}
-                    onClick={() => setCurrentSlide(index)}
-                  />
-                ))}
-              </div>
+            >
+            <div className={styles.videoContainer}>
+              <video
+              className={styles.heroVideo}
+              src="/baner_video.mp4"
+              width={1200}
+              height={400}
+              autoPlay={false}
+              loop
+              playsInline
+              controls
+              poster="/images/kajaki3.jpg"
+              style={{ width: "100%", maxHeight: "630px", borderRadius: "1rem", objectFit: "cover" }}
+              />
             </div>
-          </motion.div>
+            </motion.div>
         </div>
       </section>
 
@@ -157,6 +141,8 @@ const LandingPageClient = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
+            <Image
+              src={'/images/wodnapasja_baner.jpg'} width={800} height={400} alt="Wodna Pasja - spływy kajakowe" />
             <p className={styles.introText}>
               <b>Wodna Pasja</b> – <b>Kajaki</b> to rodzinna wypożyczalnia sprzętu kajakowego działająca na dwóch najpiękniejszych rzekach Lubelszczyzny – <b>Wiśle</b> oraz <b>Wieprzu (pradolina)</b>.
               Nasza przygoda z kajakami zaczęła się z miłości do natury i potrzeby spokoju, jaki daje czas spędzony na wodzie. Z czasem ta pasja przerodziła się w coś więcej – <b>w Wodną Pasję</b>, którą chcemy dzielić z Wami.
