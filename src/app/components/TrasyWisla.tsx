@@ -134,7 +134,7 @@ const TrasyWisla = () => {
                   <strong>Czas trwania:</strong> 5–6 godz.
                 </p>
                 <p>
-                  <strong>Cena:</strong> 75zł
+                  <strong>Cena:</strong> 75 zł/osoba
                 </p>
               </div>
               <div className={styles.routeDescription}>
@@ -186,7 +186,7 @@ const TrasyWisla = () => {
                   <strong>Czas trwania:</strong> 3–4 godz.
                 </p>
                 <p>
-                  <strong>Cena:</strong> 60zł
+                  <strong>Cena:</strong> 60 zł/osoba
                 </p>
               </div>
               <div className={styles.routeDescription}>
@@ -257,7 +257,7 @@ const TrasyWisla = () => {
                   <strong>Czas trwania:</strong> 6 godz.
                 </p>
                 <p>
-                  <strong>Cena:</strong> 75zł
+                  <strong>Cena:</strong> 75 zł/osoba
                 </p>
               </div>
               <div className={styles.routeDescription}>
