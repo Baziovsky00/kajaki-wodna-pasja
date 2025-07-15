@@ -119,7 +119,12 @@ const TrasyWisla = () => {
                 className={styles.routeImage}
               />
             </div>
-            <div className={styles.routeInfo} style={{ backgroundColor: "rgb(47, 148, 243)" }}>
+            <div
+              className={styles.routeInfo}
+              style={{
+                background: "linear-gradient(135deg, rgb(47, 148, 243) 50%, rgba(75, 85, 139, 1) 100%)",
+              }}
+            >
               <h3 className={styles.routeTitle}>Trasa 1: Lucimia – Puławy</h3>
               <div className={styles.routeDetails}>
                 <p>
@@ -166,7 +171,12 @@ const TrasyWisla = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className={styles.routeInfo} style={{ backgroundColor: "rgb(255, 114, 79)" }}>
+            <div
+              className={styles.routeInfo}
+              style={{
+                background: "linear-gradient(135deg, rgba(45, 177, 218, 1) 20%, rgba(74, 85, 150, 1) 100%)",
+              }}
+            >
               <h3 className={styles.routeTitle}>Trasa 2: Janowiec – Puławy (nasza perełka!)</h3>
               <div className={styles.routeDetails}>
                 <p>
@@ -206,7 +216,7 @@ const TrasyWisla = () => {
             </div>
             <div className={styles.routeImageContainer}>
               <Image
-                src="/images/trasy-wisla/wisla2.jpeg"
+                src="/images/trasy-wisla/wisla3.jpeg"
                 width={600}
                 height={400}
                 alt="Janowiec - Puławy trasa kajakowa"
@@ -225,14 +235,19 @@ const TrasyWisla = () => {
           >
             <div className={styles.routeImageContainer}>
               <Image
-                src="/images/trasy-wisla/wisla3.jpeg"
+                src="/images/trasy-wisla/wisla2.jpeg"
                 width={600}
                 height={400}
                 alt="Puławy - Dęblin trasa kajakowa"
                 className={styles.routeImage}
               />
             </div>
-            <div className={styles.routeInfo} style={{ backgroundColor: "rgb(79, 170, 255)" }}>
+            <div
+              className={styles.routeInfo}
+              style={{
+                background: "linear-gradient(135deg, rgba(43, 66, 145, 1) 20%, rgba(88, 93, 122, 1) 100%)",
+              }}
+            >
               <h3 className={styles.routeTitle}>Trasa 3: Puławy – Dęblin</h3>
               <div className={styles.routeDetails}>
                 <p>

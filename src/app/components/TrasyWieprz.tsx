@@ -118,7 +118,12 @@ const TrasyWieprz = () => {
                 className={styles.routeImage}
               />
             </div>
-            <div className={styles.routeInfo} style={{ backgroundColor: "#ff6b35" }}>
+            <div
+              className={styles.routeInfo}
+              style={{
+                background: "linear-gradient(135deg, rgba(47, 115, 204, 1) 50%, rgba(94, 55, 112, 1) 100%)",
+              }}
+            >
               <h3 className={styles.routeTitle}>Trasa 1: Baranów – Bialki Dolne</h3>
               <div className={styles.routeDetails}>
                 <p>
@@ -162,7 +167,12 @@ const TrasyWieprz = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <div className={styles.routeInfo} style={{ backgroundColor: "rgb(77, 118, 179)" }}>
+            <div
+              className={styles.routeInfo}
+              style={{
+                background: "linear-gradient(135deg, rgba(47, 138, 243, 1) 50%, rgba(107, 82, 252, 1) 100%)",
+              }}
+            >
               <h3 className={styles.routeTitle}>Trasa 2: Baranów – Kośmin</h3>
               <div className={styles.routeDetails}>
                 <p>
@@ -227,7 +237,12 @@ const TrasyWieprz = () => {
                 className={styles.routeImage}
               />
             </div>
-            <div className={styles.routeInfo} style={{ backgroundColor: "rgb(248, 126, 56)" }}>
+            <div
+              className={styles.routeInfo}
+              style={{
+                background: "linear-gradient(135deg, rgb(47, 148, 243) 30%, rgba(75, 85, 139, 1) 100%)",
+              }}
+            >
               <h3 className={styles.routeTitle}>Trasa 3: Bialki Dolne – Kośmin</h3>
               <div className={styles.routeDetails}>
                 <p>

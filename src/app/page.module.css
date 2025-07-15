@@ -104,7 +104,7 @@
 .heroTitle {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
-  background: linear-gradient(135deg, #ee9f4a 0%, #ff592f 50%, #da8a40 100%);
+  background: linear-gradient(135deg, #50acf7 0%, #3b8ffd 50%, #40dab9 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -140,7 +140,7 @@
 }
 
 .primaryButton {
-  background: linear-gradient(135deg, #e98011 0%, #ef6c44 100%);
+  background: linear-gradient(135deg, #4aa4ee 0%, #0d78f1 100%);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -149,13 +149,13 @@
   border-radius: 0.75rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(245, 158, 66, 0.3);
+  box-shadow: 0 4px 15px rgba(66, 93, 245, 0.3);
   min-width: 200px;
 }
 
 .primaryButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
+  box-shadow: 0 8px 25px rgba(68, 185, 239, 0.4);
 }
 
 .secondaryButton {
@@ -174,7 +174,7 @@
 
 .secondaryButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(251, 191, 36, 0.4);
+  box-shadow: 0 8px 25px rgba(36, 154, 251, 0.4);
 }
 
 .heroImageContainer {
@@ -358,7 +358,7 @@
 .sectionTitle {
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #ff6d33 0%, #ff7519 100%);
+  background: linear-gradient(135deg, #3f5886 0%, #53628b 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

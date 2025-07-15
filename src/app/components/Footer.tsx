@@ -40,8 +40,7 @@ export default function Footer() {
               </motion.div>
             </Link>
             <p className={styles.footerDescription}>
-              Profesjonalne spływy kajakowe i wypożyczalnia sprzętu w malowniczej Parchatce. Odkryj uroki Wieprza i
-              Wisły z nami!
+              Wypożyczalnia sprzętu kajakowego działająca na najpiękniejszych rzekach Lubelszczyzny. Odkryj uroki Wieprza i Wisły z Wodną Pasją!
             </p>
           </motion.div>
 

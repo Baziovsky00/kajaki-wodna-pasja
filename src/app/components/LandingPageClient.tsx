@@ -81,7 +81,7 @@ const LandingPageClient = () => {
               Odkryj uroki Wieprza i Wisły z Wodną Pasją!
             </motion.h1>
             <motion.p className={styles.heroSubtitle} variants={fadeInUp}>
-              Spływy kajakowe i wypożyczalnia sprzętu – Parchatka (okolice Kazimierza Dolnego i Puław)
+              Wypożyczalnia kajaków w sercu Lubelszczyzny
             </motion.p>
             <motion.div className={styles.heroButtons} variants={fadeInUp}>
               <Link href={"/trasy-wieprz"}>
@@ -257,11 +257,11 @@ const LandingPageClient = () => {
                 </motion.div>
               </div>
 
-              <div className={styles.operatingHours}>
+              {/* <div className={styles.operatingHours}>
                 <p className={styles.operatingHoursText}>
                   <strong>Działamy:</strong> sezonowo – wiosna–lato, oferty na długi weekendy (Czerwiec), Dzień Dziecka
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

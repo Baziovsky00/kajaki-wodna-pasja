@@ -151,6 +151,9 @@
 
 .routeDetails {
   margin-bottom: 1.5rem;
+  background-color: #00000034;
+  padding: 0.8em;
+  border-radius: 4px;
 }
 
 .routeDetails p {
@@ -158,15 +161,23 @@
   font-size: 1rem;
 }
 
+.routeDetails p:last-child {
+  margin-bottom: 0px;
+}
+
 .routeDescription {
   flex-grow: 1;
   margin-bottom: 1.5rem;
+  padding: 0.8em;
+  border-radius: 4px;
+  background-color: #00000034;
 }
 
 .routeDescription h4 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  margin-top: 1.2em;
 }
 
 .routeDescription ul {

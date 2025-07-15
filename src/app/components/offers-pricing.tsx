@@ -6,9 +6,9 @@ export default function OffersPricing() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
             {/* Hero Section */}
-            <section className="py-16 px-4 text-center bg-gradient-to-r text-white" style={{background: 'linear-gradient(135deg, #25c1ff 0%, #247dd1 100%'}}>
+            <section className="py-16 px-4 text-center bg-gradient-to-r text-white" style={{ background: 'linear-gradient(135deg, #25c1ff 0%, #247dd1 100%' }}>
                 <div className="container mx-auto max-w-4xl">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Oferta i Cennik</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Oferta</h1>
                     <p className="text-xl md:text-2xl mb-8 opacity-90">
                         Zapraszamy na niezapomniane spływy kajakowe po dwóch wyjątkowych rzekach Lubelszczyzny: Wiśle oraz Wieprzu
                         (pradolina)
@@ -58,22 +58,6 @@ export default function OffersPricing() {
                         <Card className="hover:shadow-lg transition-shadow">
                             <div className="aspect-video bg-gray-200 rounded-t-lg relative">
                                 <Image
-                                    src={'/images/kajaki3.jpg'}
-                                    alt="Wodna Pasja - Spływy indywidualne i rodzinne"
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, 500px"
-                                    className="object-cover rounded-t-lg"
-                                />
-                            </div>
-                            <CardHeader className="text-center">
-                                <Users className="w-8 h-8 mx-auto mb-2 text-green-600" />
-                                <CardTitle className="text-lg">Spływy indywidualne i rodzinne</CardTitle>
-                            </CardHeader>
-                        </Card>
-
-                        <Card className="hover:shadow-lg transition-shadow">
-                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
-                                <Image
                                     src={'/images/kajaki10.jpg'}
                                     alt="Wodna Pasja - Spływy grupowe i integracyjne"
                                     fill
@@ -85,6 +69,22 @@ export default function OffersPricing() {
                                 <Users className="w-8 h-8 mx-auto mb-2 text-orange-600" />
                                 <CardTitle className="text-lg">Spływy grupowe i integracyjne</CardTitle>
                                 <CardDescription>dla firm i szkół</CardDescription>
+                            </CardHeader>
+                        </Card>
+
+                        <Card className="hover:shadow-lg transition-shadow">
+                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
+                                <Image
+                                    src={'/images/splyw-popoludniowo-wieczorny.jpeg'}
+                                    alt="Wodna Pasja - Spływy indywidualne i rodzinne"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 500px"
+                                    className="object-cover rounded-t-lg"
+                                />
+                            </div>
+                            <CardHeader className="text-center">
+                                <Users className="w-8 h-8 mx-auto mb-2 text-green-600" />
+                                <CardTitle className="text-lg">Spływy popołudniowo-wieczorne</CardTitle>
                             </CardHeader>
                         </Card>
                     </div>
@@ -136,6 +136,15 @@ export default function OffersPricing() {
 
                     <div className="grid md:grid-cols-2 gap-8">
                         <Card>
+                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
+                                <Image
+                                    src={'/images/kajaki8.jpg'}
+                                    alt="Nowoczesne kajaki i kapoki"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 500px"
+                                    className="object-cover rounded-t-lg"
+                                />
+                            </div>
                             <CardHeader>
                                 <CardTitle className="text-xl">Sprzęt</CardTitle>
                             </CardHeader>
@@ -154,6 +163,15 @@ export default function OffersPricing() {
                         </Card>
 
                         <Card>
+                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
+                                <Image
+                                    src={'/images/kajadki5.jpg'}
+                                    alt="Ogniska, kemping i catering"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 500px"
+                                    className="object-cover rounded-t-lg"
+                                />
+                            </div>
                             <CardHeader>
                                 <CardTitle className="text-xl">Dodatkowo możemy pomóc w</CardTitle>
                             </CardHeader>
