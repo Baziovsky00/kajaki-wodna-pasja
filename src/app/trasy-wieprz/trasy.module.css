@@ -97,7 +97,8 @@
 
 .routesSection {
   padding: 4rem 0;
-  background: #fafafa;
+    background: linear-gradient(135deg, #fef8ff 0%, #fdf4fd 10%, #fff4f4 100%);
+
 }
 
 .sectionTitle {

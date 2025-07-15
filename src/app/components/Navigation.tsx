@@ -33,7 +33,7 @@ const Navigation = () => {
 
     const links = [
         {
-            name: 'Trasy Wisla',
+            name: 'Trasy Wisła',
             link: 'trasy-wisla',
             type: 'link'
         },

@@ -85,6 +85,7 @@ export default function OffersPricing() {
                             <CardHeader className="text-center">
                                 <Users className="w-8 h-8 mx-auto mb-2 text-green-600" />
                                 <CardTitle className="text-lg">Spływy popołudniowo-wieczorne</CardTitle>
+                                <CardDescription>Romantyczna randka na wodzie</CardDescription>
                             </CardHeader>
                         </Card>
                     </div>
@@ -165,7 +166,7 @@ export default function OffersPricing() {
                         <Card>
                             <div className="aspect-video bg-gray-200 rounded-t-lg relative">
                                 <Image
-                                    src={'/images/kajadki5.jpg'}
+                                    src={'/images/ognisko.jpeg'}
                                     alt="Ogniska, kemping i catering"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 500px"

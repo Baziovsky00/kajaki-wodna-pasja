@@ -159,7 +159,7 @@
 }
 
 .secondaryButton {
-  background: linear-gradient(135deg, #353635 0%, #3b3b39 100%);
+  background: linear-gradient(135deg, #c463f1 40%, #8e68cc 100%);
   color: white;
   border: none;
   padding: 1rem 2rem;

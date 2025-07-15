@@ -31,6 +31,57 @@ const scaleIn = {
 const reviews = [
   {
     id: 1,
+    name: "Renata Esss",
+    rating: 5,
+    date: "2 tygodnie temu",
+    text: "Świetnie się bawiliśmy ! Trasa z Janowca do Puław, mimo moich początkowych obaw, okazała się prosta i niezwykle przyjemna. Spływ Wisłą był okazją do podziwiania pięknych krajobrazów, postuj na ognisko i płyniemy dalej . Zakończenie spływu w Porcie Marina w Puławach było bardzo wygodne. Zdecydowanie polecam każdemu, kto szuka niezapomnianych wrażeń na wodzie 🙂",
+    avatar: "KM",
+  },
+  {
+    id: 2,
+    name: "Agnieszka Sanecka",
+    rating: 5,
+    date: "2 tygodnie temu",
+    text: "Mieliśmy przyjemność skorzystać z usług Wodna Pasja – Kajaki podczas spływu kajakowego na rzece Wieprz i jesteśmy absolutnie zachwyceni! Kajaki były nowe, wygodne i świetnie przygotowane – widać, że właściciele dbają o sprzęt na najwyższym poziomie. Obsługa przemiła, bardzo pomocna i w pełni profesjonalna – wszystko dokładnie wyjaśnione, trasa dobrana idealnie do naszych potrzeb. Cała organizacja dopięta na ostatni guzik. Na zakończenie spływu czekała na nas dodatkowa niespodzianka – klimatyczne ognisko, które było idealnym zwieńczeniem dnia. Super atmosfera, integracja i wspólne pieczenie kiełbasek sprawiły, że ten dzień na długo zostanie w naszej pamięci. Z czystym sumieniem polecam Wodną Pasję – Kajaki każdemu, kto szuka niezapomnianej przygody na wodzie. Na pewno jeszcze wrócimy!",
+    avatar: "KM",
+  },
+  {
+    id: 3,
+    name: "Edyta Grudzińska",
+    rating: 5,
+    date: "2 tygodnie temu",
+    text: "Spływy kajakowe z ,,Wodną Pasją'' po rzece Wieprz to świetny sposób na aktywny wypoczynek oraz okazja spędzenia wspólnego czasu z super ekipą.Trasa oferuje piękne widoki. Natomiast sprzęt, który proponują właściciele jest nowy i zadbany. Dzięki temu spływy te są idealne. Gorąco polecam!😊",
+    avatar: "KM",
+  },
+  {
+    id: 4,
+    name: "GOran",
+    rating: 5,
+    date: "2 tygodnie temu",
+    text: 'Świetna organizacja. Zadbane, czyste i wygodne kajaki. Jeśli spływ to tylko z "Wodną Pasją" i z mega pozytywnie zakręconą Szefową :) Serdecznie polecam!',
+    avatar: "KM",
+  },
+  {
+    id: 5,
+    name: "Monika Grodzicka",
+    rating: 5,
+    date: "2 tygodnie temu",
+    text: "Gospodarze imprezy super daje 10, spływ rewelacja daje 10. Super super super. Dziękuję Wam bardzo . Jesteście naprawdę w git. Buziaki",
+    avatar: "KM",
+  },
+  {
+    id: 6,
+    name: "Patrycja Mrowiec",
+    rating: 5,
+    date: "2 tygodnie temu",
+    text: "Bardzo polecam☺️ Organizacja całego spływu była na najwyższym poziomie. Od momentu rezerwacji, przez komunikację przed wyjazdem, aż po sam spływ, wszystko przebiegało sprawnie i bezproblemowo. Właściciele firmy bardzo sympatyczni i pomocni. Kajaki i sprzęt dodatkowy w idealnym stanie.",
+    avatar: "KM",
+  },
+
+
+
+  {
+    id: 7,
     name: "Kacper Mrowiec",
     rating: 5,
     date: "2 tygodnie temu",
@@ -38,7 +89,7 @@ const reviews = [
     avatar: "KM",
   },
   {
-    id: 2,
+    id: 8,
     name: "Ola Klimek",
     rating: 5,
     date: "1 miesiąc temu",
@@ -46,7 +97,7 @@ const reviews = [
     avatar: "OK",
   },
   {
-    id: 3,
+    id: 9,
     name: "Marta Ojdana",
     rating: 5,
     date: "3 tygodnie temu",
@@ -54,7 +105,7 @@ const reviews = [
     avatar: "KW",
   },
   {
-    id: 4,
+    id: 10,
     name: "Piotr Zieliński",
     rating: 5,
     date: "2 miesiące temu",
@@ -62,7 +113,7 @@ const reviews = [
     avatar: "PZ",
   },
   {
-    id: 5,
+    id: 11,
     name: "Agnieszka Stepniak-Łuczywek",
     rating: 5,
     date: "1 miesiąc temu",
@@ -70,7 +121,7 @@ const reviews = [
     avatar: "ASŁ",
   },
   {
-    id: 6,
+    id: 12,
     name: "Kamila Kobiałka",
     rating: 5,
     date: "3 tygodnie temu",
@@ -148,7 +199,7 @@ const ReviewsSection = () => {
                               <div className="flex items-center gap-2 mt-1">
                                 <StarRating rating={review.rating} />
                               </div>
-                              <p className="text-xs text-gray-500 mt-1">{review.date}</p>
+                              {/* <p className="text-xs text-gray-500 mt-1">{review.date}</p> */}
                             </div>
                           </div>
 

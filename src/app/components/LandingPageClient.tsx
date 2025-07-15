@@ -12,6 +12,7 @@ import styles from "@/app/page.module.css";
 import Image from "next/image"
 import OffersPricing from "./offers-pricing"
 import CallIcon from "./CallIcon"
+import GallerySlider from "./gallery-slider"
 
 // Animation variants
 const fadeInUp = {
@@ -107,27 +108,27 @@ const LandingPageClient = () => {
             </motion.div>
           </motion.div>
 
-            <motion.div
+          <motion.div
             className={styles.heroImageContainer}
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            >
+          >
             <div className={styles.videoContainer}>
               <video
-              className={styles.heroVideo}
-              src="/baner_video.mp4"
-              width={1200}
-              height={400}
-              autoPlay={false}
-              loop
-              playsInline
-              controls
-              poster="/images/kajaki3.jpg"
-              style={{ width: "100%", maxHeight: "630px", borderRadius: "1rem", objectFit: "cover" }}
+                className={styles.heroVideo}
+                src="/baner_video.mp4"
+                width={1200}
+                height={400}
+                autoPlay={false}
+                loop
+                playsInline
+                controls
+                poster="/images/kajaki3.jpg"
+                style={{ width: "100%", maxHeight: "630px", borderRadius: "1rem", objectFit: "cover" }}
               />
             </div>
-            </motion.div>
+          </motion.div>
         </div>
       </section>
 
@@ -162,7 +163,7 @@ const LandingPageClient = () => {
       <ReviewsSection />
 
       {/* Gallery */}
-      <section className={styles.gallery}>
+      {/* <section className={styles.gallery}>
         <div className={styles.sectionContainer}>
           <motion.div
             className={styles.sectionHeader}
@@ -181,7 +182,7 @@ const LandingPageClient = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
-            {[4, 5, 6, 7, 8, 9].map((i) => (
+            {[4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18].map((i) => (
               <motion.div
                 key={i}
                 className={styles.galleryItem}
@@ -203,7 +204,11 @@ const LandingPageClient = () => {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
+      <div className={styles.sectionHeader} style={{marginTop: 150}}>
+        <h2 className={styles.sectionTitle}>Galeria</h2>
+      </div>
+      <GallerySlider />
 
       {/* Contact */}
       <section id="kontakt" className={styles.contact}>
