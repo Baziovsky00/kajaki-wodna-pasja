@@ -63,7 +63,7 @@ export default function GallerySlider() {
                             {[4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19].map((i) => (
                                 <CarouselItem key={i} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                                     <motion.div
-                                        variants={scaleIn}
+                                        // variants={scaleIn}
                                         whileHover={{ scale: 1.05, y: -5 }}
                                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                                         className="h-full"
