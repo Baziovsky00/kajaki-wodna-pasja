@@ -1,8 +1,25 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Clock, Users, Star } from "lucide-react"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 export default function OffersPricing() {
+    const fadeInUp = {
+        initial: { opacity: 0, y: 30 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.6, ease: "easeOut" },
+    }
+
+    const staggerContainer = {
+        initial: {},
+        animate: {
+            transition: {
+                staggerChildren: 0.2,
+            },
+        },
+    }
+
+
     return (
         <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
             {/* Hero Section */}
@@ -135,65 +152,105 @@ export default function OffersPricing() {
                         Naszym priorytetem jest bezpieczeństwo i komfort
                     </h2>
 
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <Card>
-                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
-                                <Image
-                                    src={'/images/kajaki8.jpg'}
-                                    alt="Nowoczesne kajaki i kapoki"
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, 500px"
-                                    className="object-cover rounded-t-lg"
-                                />
-                            </div>
-                            <CardHeader>
-                                <CardTitle className="text-xl">Sprzęt</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <ul className="space-y-3">
-                                    <li className="flex items-start gap-3">
-                                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                                        <span>Nowoczesne, płaskodenne kajaki dwuosobowe (możliwość dostawki dla dzieci do 5 lat)</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                                        <span>Kapoki nowe, czyste i dopasowane do wagi – prane i dezynfekowane po każdym użyciu</span>
-                                    </li>
-                                </ul>
-                            </CardContent>
-                        </Card>
+                    <motion.div
+                        className="grid md:grid-cols-2 gap-8"
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true, margin: "-50px" }}
+                        variants={staggerContainer}
+                    >
+                        {/* Equipment Block */}
+                        <motion.div
+                            className="relative aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] rounded-2xl overflow-hidden group cursor-pointer"
+                            variants={fadeInUp}
+                            whileHover={{ scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                        >
+                            <Image
+                                src="/images/kajaki8.jpg"
+                                alt="Nowoczesne kajaki i kapoki"
+                                fill
+                                sizes="(max-width: 768px) 100vw, 500px"
+                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
 
-                        <Card>
-                            <div className="aspect-video bg-gray-200 rounded-t-lg relative">
-                                <Image
-                                    src={'/images/ognisko.jpeg'}
-                                    alt="Ogniska, kemping i catering"
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, 500px"
-                                    className="object-cover rounded-t-lg"
-                                />
+                            {/* Gradient Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+
+                            {/* Content Overlay */}
+                            <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
+                                <div className="text-white space-y-4">
+                                    <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-lg">Sprzęt</h3>
+
+                                    <ul className="space-y-3">
+                                        <li className="flex items-start gap-3 group/item">
+                                            <div className="w-3 h-3 bg-blue-400 rounded-full mt-1.5 flex-shrink-0 shadow-lg group-hover/item:bg-blue-300 transition-colors" />
+                                            <span className="text-sm md:text-base leading-relaxed drop-shadow-md">
+                                                Nowoczesne, płaskodenne kajaki dwuosobowe (możliwość dostawki dla dzieci do 5 lat)
+                                            </span>
+                                        </li>
+                                        <li className="flex items-start gap-3 group/item">
+                                            <div className="w-3 h-3 bg-blue-400 rounded-full mt-1.5 flex-shrink-0 shadow-lg group-hover/item:bg-blue-300 transition-colors" />
+                                            <span className="text-sm md:text-base leading-relaxed drop-shadow-md">
+                                                Kapoki nowe, czyste i dopasowane do wagi – prane i dezynfekowane po każdym użyciu
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <CardHeader>
-                                <CardTitle className="text-xl">Dodatkowo możemy pomóc w</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <ul className="space-y-3">
-                                    <li className="flex items-start gap-3">
-                                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                                        <span>Organizacji ognisk</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                                        <span>Możliwość kempingu na trasie</span>
-                                    </li>
-                                    <li className="flex items-start gap-3">
-                                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                                        <span>Opcjonalnie Catering dopasowany do potrzeb uczestników</span>
-                                    </li>
-                                </ul>
-                            </CardContent>
-                        </Card>
-                    </div>
+
+                            {/* Subtle border highlight */}
+                            <div className="absolute inset-0 rounded-2xl ring-1 ring-white/20 group-hover:ring-white/40 transition-all duration-300" />
+                        </motion.div>
+
+                        {/* Additional Services Block */}
+                        <motion.div
+                            className="relative aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] rounded-2xl overflow-hidden group cursor-pointer"
+                            variants={fadeInUp}
+                            whileHover={{ scale: 1.02 }}
+                            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                        >
+                            <Image
+                                src="/images/ognisko.jpeg"
+                                alt="Ogniska, kemping i catering"
+                                fill
+                                sizes="(max-width: 768px) 100vw, 500px"
+                                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+
+                            {/* Gradient Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+
+                            {/* Content Overlay */}
+                            <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
+                                <div className="text-white space-y-4">
+                                    <h3 className="text-2xl md:text-3xl font-bold mb-4 drop-shadow-lg">Dodatkowo możemy pomóc w</h3>
+
+                                    <ul className="space-y-3">
+                                        <li className="flex items-start gap-3 group/item">
+                                            <div className="w-3 h-3 bg-green-400 rounded-full mt-1.5 flex-shrink-0 shadow-lg group-hover/item:bg-green-300 transition-colors" />
+                                            <span className="text-sm md:text-base leading-relaxed drop-shadow-md">Organizacji ognisk</span>
+                                        </li>
+                                        <li className="flex items-start gap-3 group/item">
+                                            <div className="w-3 h-3 bg-green-400 rounded-full mt-1.5 flex-shrink-0 shadow-lg group-hover/item:bg-green-300 transition-colors" />
+                                            <span className="text-sm md:text-base leading-relaxed drop-shadow-md">
+                                                Możliwość kempingu na trasie
+                                            </span>
+                                        </li>
+                                        <li className="flex items-start gap-3 group/item">
+                                            <div className="w-3 h-3 bg-green-400 rounded-full mt-1.5 flex-shrink-0 shadow-lg group-hover/item:bg-green-300 transition-colors" />
+                                            <span className="text-sm md:text-base leading-relaxed drop-shadow-md">
+                                                Opcjonalnie Catering dopasowany do potrzeb uczestników
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            {/* Subtle border highlight */}
+                            <div className="absolute inset-0 rounded-2xl ring-1 ring-white/20 group-hover:ring-white/40 transition-all duration-300" />
+                        </motion.div>
+                    </motion.div>
 
                     <div className="mt-12 text-center">
                         <p className="text-lg text-gray-700">
